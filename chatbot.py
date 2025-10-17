@@ -23,7 +23,7 @@ def get_ai_response(messages_payload, model):
     answer = response.json()["choices"][0]["message"]["content"]
     return answer
 
-st.title("Chatbot by Chris Mahlake")
+st.title("Chatbot Assistant (Lunga)")
 
 model_options = {
     "Mistral 7B (Free)": "mistralai/mistral-7b-instruct:free",

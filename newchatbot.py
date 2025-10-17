@@ -138,7 +138,7 @@ with st.sidebar:
         st.rerun()
 
 # Main chat interface
-st.title("🤖 AI Chatbot")
+st.title("Chatbot Assistant (Lunga)")
 st.markdown("---")
 
 # Initialize session state
@@ -193,7 +193,7 @@ st.markdown("---")
 st.markdown(
     """
     <div style='text-align: center'>
-        <p>Made with ❤️ using Streamlit</p>
+        <p>Made by Chris Mahlake</p>
         <p>Current time: {}</p>
     </div>
     """.format(datetime.now().strftime("%Y-%m-%d %H:%M:%S")),
