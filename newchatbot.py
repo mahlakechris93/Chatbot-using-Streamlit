@@ -7,7 +7,7 @@ import re
 
 # Page configuration
 st.set_page_config(
-    page_title="AI Chatbot",
+    page_title="AI Chatbot Lunga",
     page_icon="🤖",
     layout="wide",
     initial_sidebar_state="expanded"
@@ -69,7 +69,7 @@ def clean_response(content):
     return content
 
 def get_ai_response(messages_payload, model, temperature):
-    api_key = st.secrets["OPENROUTER_API_KEY"]
+    api_key = st.secrets["k-or-v1-316cb10a2b18da30a0b1ae5273ed7c0bd052fcf438b2fc701f77f4cc97e3a411"]
     try:
         response = requests.post(
             url="https://openrouter.ai/api/v1/chat/completions",
