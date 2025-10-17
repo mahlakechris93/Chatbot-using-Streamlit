@@ -69,7 +69,7 @@ def clean_response(content):
     return content
 
 def get_ai_response(messages_payload, model, temperature):
-    api_key = st.secrets["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"]
+    api_key = "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"
     try:
         response = requests.post(
             url="https://openrouter.ai/api/v1/chat/completions",

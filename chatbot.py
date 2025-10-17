@@ -33,7 +33,7 @@ model_options = {
 
 #Model Selector
 selected_model_name = st.selectbox(
-    "Pilih Model",
+    "Made by Chris Mahlake",
     options=list(model_options.keys()),
     index=0,
 )
@@ -49,14 +49,14 @@ for message in st.session_state.messages:
         st.markdown(message["content"])
 
 # Handle user input
-if prompt := st.chat_input("Tulis pesan..."):
+if prompt := st.chat_input("Type your message here..."):
     st.session_state.messages.append({"role": "user", "content": prompt})
     with st.chat_message("user"):
         st.markdown(prompt)
 
         #Get AI Response
         with st.chat_message("assistant"):
-            with st.spinner("Berpikir..."):
+            with st.spinner("Thinking..."):
                 # Create API Request
                 messages_for_api = st.session_state.messages.copy()
                 #  HIT FUNCTION API
@@ -65,4 +65,17 @@ if prompt := st.chat_input("Tulis pesan..."):
                     st.markdown(ai_response)
                     st.session_state.messages.append({"role": "assistant", "content": ai_response})
                 else:
-                    st.error("Error: Gagal mendapatkan respons dari AI")
+                    st.error("Error")
+                    
+# Footer
+st.markdown("---")
+st.markdown(
+    """
+    <div style='text-align: center'>
+        <p>Made by Chris Mahlake</p>
+        <p>Current time: {}</p>
+    </div>
+    """.format(datetime.now().strftime("%Y-%m-%d %H:%M:%S")),
+    unsafe_allow_html=True
+    
+)
