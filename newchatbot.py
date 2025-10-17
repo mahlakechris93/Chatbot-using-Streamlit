@@ -63,13 +63,13 @@ def clean_response(content):
         content = content.replace(token, "")
     
     # Remove extra whitespace and clean up
-    content = re.sub(r'\s+', ' ', content)  # Replace multiple spaces with single space
+    content = re.sub(r'\s+', ' ', content)  
     content = content.strip()
     
     return content
 
 def get_ai_response(messages_payload, model, temperature):
-    api_key = "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"
+    api_key = st.secrets["OPENROUTER_API_KEY"]
     try:
         response = requests.post(
             url="https://openrouter.ai/api/v1/chat/completions",
