@@ -1,4 +1,4 @@
-# AI Chatbot with Streamlit
+# AI Chatbot Assistant (Lunga)
 
 A modern, interactive AI chatbot built with Streamlit that supports multiple AI models via OpenRouter API.
 
@@ -70,7 +70,7 @@ A modern, interactive AI chatbot built with Streamlit that supports multiple AI 
 ## Project Structure
 
 ```
-streamlit-chatbot/
+chatbot-using-streamlit/
 ├── chatbot.py          # Basic chatbot implementation
 ├── newchatbot.py       # Enhanced chatbot with advanced features
 ├── README.md           # Project documentation
