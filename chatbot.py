@@ -65,4 +65,4 @@ if prompt := st.chat_input("Type your message here..."):
                     st.markdown(ai_response)
                     st.session_state.messages.append({"role": "assistant", "content": ai_response})
                 else:
-                    st.error("Error")
+                    st.error("Error: Gagal mendapatkan respons dari AI")
