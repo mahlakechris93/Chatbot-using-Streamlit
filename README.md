@@ -28,6 +28,19 @@ A modern, interactive AI chatbot built with Streamlit that supports multiple AI 
 - Message history persistence
 - Responsive design
 
+## Screenshots
+
+## **UI 1**
+![UI 1](https://github.com/mahlakechris93/Chatbot-using-Streamlit/blob/main/screenshots/1.png)
+
+### **UI 2**
+![UI 2](https://github.com/mahlakechris93/Chatbot-using-Streamlit/blob/main/screenshots/2.png)
+
+## Live Demo on Streamlit
+
+🌐 [Live Demo](https://assistant-chatbot-lunga.streamlit.app/)
+
+
 ## Installation
 
 1. **Clone the repository:**
