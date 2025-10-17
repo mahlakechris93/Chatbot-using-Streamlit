@@ -32,8 +32,8 @@ A modern, interactive AI chatbot built with Streamlit that supports multiple AI 
 
 1. **Clone the repository:**
    ```bash
-   git clone https://github.com/brambrc/streamlit-chatbot.git
-   cd streamlit-chatbot
+   git clone https://github.com/mahlakechris93/Chatbot-using-Streamlit.git
+   cd Chatbot-using-Streamlit
    ```
 
 2. **Create virtual environment:**
