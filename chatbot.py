@@ -66,16 +66,3 @@ if prompt := st.chat_input("Type your message here..."):
                     st.session_state.messages.append({"role": "assistant", "content": ai_response})
                 else:
                     st.error("Error")
-                    
-# Footer
-st.markdown("---")
-st.markdown(
-    """
-    <div style='text-align: center'>
-        <p>Made by Chris Mahlake</p>
-        <p>Current time: {}</p>
-    </div>
-    """.format(datetime.now().strftime("%Y-%m-%d %H:%M:%S")),
-    unsafe_allow_html=True
-    
-)
